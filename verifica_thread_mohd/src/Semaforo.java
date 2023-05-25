@@ -2,7 +2,7 @@ public class Semaforo {
     private int valore;
 
     public Semaforo(){
-        this.valore = 1;
+        this.valore = 2;
     }
 
     public synchronized void P(){
