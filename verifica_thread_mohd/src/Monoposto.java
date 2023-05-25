@@ -24,7 +24,7 @@ public class Monoposto extends Thread{
                 System.out.println(e.getMessage());
             }
 
-            if(i % 3 == 0){
+            if(i % 3 == 0 && i != 0){
                 semaforo.P();
                 box.cambioGomme();
                 semaforo.V();
