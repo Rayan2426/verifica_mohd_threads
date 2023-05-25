@@ -5,6 +5,11 @@ public class Monoposto extends Thread{
     private static Box box = new Box();
     private static Semaforo semaforo = new Semaforo();
 
+    /** Instantiates the Monoposto with an id, Scuderia and a pilot
+     * @param String id
+     * @param String scuderia
+     * @param String pilota
+     */
     public Monoposto(String id, String scuderia, String pilota){
         this.id = id;
         this.scuderia = scuderia;
@@ -34,4 +39,25 @@ public class Monoposto extends Thread{
         }
 
     }
+
+    /** Getter method
+     * @return the name of the pilot
+     */
+    public String getPilota(){
+        return pilota;
+    }
+
+    /** Getter method
+     * @return the id of the Monoposto
+     */
+    public String getID(){
+        return id;
+    }
+    /** Getter method
+     * @return the name of the Scuderia
+     */
+    public String getScuderia(){
+        return scuderia;
+    }
+    
 }
