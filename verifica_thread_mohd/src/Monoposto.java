@@ -24,7 +24,7 @@ public class Monoposto extends Thread{
         for(int i = 0; i < 10; i++){
 
             try {
-                sleep((int)(Math.random() * 4 + 1) * 1000);
+                sleep((int)(Math.random() * 4 + 1) * 1);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
@@ -35,7 +35,7 @@ public class Monoposto extends Thread{
                 semaforo.V();
             }
 
-            System.out.println(pilota + " ha completato il giro numero " + (i+1));
+            System.out.println("GIRO-" + (i+1) + ": " + pilota + " COMPLETATO");
         }
 
     }
