@@ -35,7 +35,7 @@ public class Monoposto extends Thread{
                 semaforo.V();
             }
 
-            System.out.println(pilota + " ha completato il giro numero " + (i+1));
+            System.out.println("GIRO-"+ (i+1) + ": " + pilota + " ha completato il giro");
         }
 
     }
